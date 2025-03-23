@@ -188,6 +188,11 @@ h3 {
         margin-bottom: 1rem;
         color: #1E261B;
 
+        span {
+            font-size: 0.4em;
+            vertical-align: middle;
+        }
+
         @media screen and (width < 992px) {
             font-size: 2.5rem;
         }
@@ -222,12 +227,19 @@ h3 {
             padding-top: 3rem;
         }
 
+        @media screen and (width > 1400px) {
+            margin-right: -40px;
+        }
+        @media screen and (width > 1200px) {
+            margin-right: -30px;
+        }
+
         img {
             display: block;
-            margin-right: -30px;
-
+            margin-left: auto;
             @media screen and (width < 992px) {
                 width: 80%;
+                margin: auto !important;
             }
         }
     }
@@ -282,6 +294,19 @@ h3 {
 
 .section-2 {
     padding: 120px 0;
+
+    .order-1 {
+        @media screen and (width >= 1400px) {
+            padding-left: 84px;        
+        }
+    }
+}
+.section-3 {
+    @media screen and (width >= 1400px) {
+        p {
+            max-width: 532px;
+        }
+    }
 }
 
 .section-4 {
@@ -300,6 +325,18 @@ h3 {
 .section-5 {
     padding: 4.3rem 0;
     background: #F0F0F266;
+
+    h2 span {
+        position: relative;
+        @media screen and (width >= 1400px) {
+            &::after {
+                content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none"><path d="M10.9585 5.625H26.3752V17.9583H21.7502L15.5835 21.0417V17.9583H10.9585V5.625Z" stroke="%23545C4D" stroke-opacity="0.9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.1252 25.6654V31.832C17.1252 32.2409 16.9627 32.633 16.6736 32.9222C16.3845 33.2113 15.9924 33.3737 15.5835 33.3737H3.25016C2.84129 33.3737 2.44916 33.2113 2.16004 32.9222C1.87092 32.633 1.7085 32.2409 1.7085 31.832V10.2487C1.7085 9.83982 1.87092 9.44769 2.16004 9.15858C2.44916 8.86946 2.84129 8.70703 3.25016 8.70703H6.3335M9.41683 28.7487V28.7641" stroke="%23545C4D" stroke-opacity="0.9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                position: absolute;
+                left: 10px;
+            }
+        }
+    }
+
     .para {
         max-width: 453px;
     }
@@ -307,6 +344,12 @@ h3 {
 
 .section-6 {
     padding: 120px 0;
+
+    @media screen and (width >= 1400px) {
+        .order-1 {
+            padding-left: 100px;
+        }
+    }
 }
 
 .section-7 {
@@ -547,6 +590,10 @@ footer {
         @media screen and ( width < 800px) {
             display: flex;
             justify-content: space-between;
+        }
+
+        @media screen and (width >= 1400px) {
+            padding-right: 40px;
         }
     }
 
